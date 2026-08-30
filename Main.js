@@ -13,10 +13,11 @@ const axios = defaultRequire("axios");
 const fs = defaultRequire("fs-extra");
 const path = defaultRequire("path");
 const readline = defaultRequire("readline");
-const login = require("./includes/Fca");
+const { login } = require("ws3-fca");
 const https = defaultRequire("https");
 const { execSync } = require('child_process');
 const log = require('./utils/logger/log.js');
+const { checkAndSelfUpdate } = require('./includes/rX/autoUpdate.js');
 
 process.stdout.write("\x1b]2;GOAT BOT V3 - MADE BY RX\x1b\x5c");
 process.env.BLUEBIRD_W_FORGOTTEN_RETURN = 0;
@@ -112,11 +113,7 @@ global.client = {
 global.temp = {
 	createThreadData: [],
 	createUserData: [],
-	// Map<threadID, lastFailureTimestamp> — a thread that failed to create
-	// (e.g. a transient api.getThreadInfo error) is only skipped for a short
-	// cooldown, then retried on the next incoming message, instead of being
-	// silently ignored forever until the bot restarts.
-	createThreadDataError: new Map(),
+	createThreadDataError: [],
 	filesOfGoogleDrive: { arraybuffer: {}, stream: {}, fileNames: {} },
 	contentScripts: { cmds: {}, events: {} }
 };
@@ -226,8 +223,8 @@ async function startBot() {
 
 global.GoatBot.reLoginBot = startBot;
 
-// ——————————— START BOT ——————————— //
-// Git auto update no longer blocks boot (this used to time out deploys on
-// hosts like Render). It now runs silently in the background after login —
-// see modules/cmds/update.js (onLoad starts includes/rX/updateNotifier.js).
-startBot();
+// ——————————— GIT AUTO UPDATE + START BOT ——————————— //
+(async () => {
+	await checkAndSelfUpdate();
+	startBot();
+})();
