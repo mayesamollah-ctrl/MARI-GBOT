@@ -74,7 +74,7 @@ module.exports = {
     ctx.font = "22px Roboto";
     ctx.shadowColor = "#00d5ff";
     ctx.shadowBlur = 18;
-    ctx.fillText("X69X BOT V2", 50, 40);
+    ctx.fillText("HR BOT BOT V2", 50, 40);
 
     const labels = [
       "Bot Uptime", "System Uptime", "CPU", "RAM Usage",
@@ -91,7 +91,7 @@ module.exports = {
       hostname,
       `${ping} ms`,
       `${botMemory} MB`,
-      "Azadx69x"
+      "HR BOT"
     ];
 
     const labelColors = [
