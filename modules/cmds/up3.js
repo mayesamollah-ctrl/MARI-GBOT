@@ -78,11 +78,11 @@ module.exports = {
       fs.writeFileSync(filePath, canvas.toBuffer("image/png"));
       
       const bodyText = `
-✿•≫────•『𝐗69𝐗 𝐁𝐎𝐓』•────≪•✿
+✿•≫────•『𝐇𝐑 𝐁𝐎𝐓』•────≪•✿
 ⏳ 𝐔𝐩𝐭𝐢𝐦𝐞: ${uptimeStr}
 📶 𝐏𝐢𝐧𝐠: ${ping} ms
 🖥 𝐂𝐏𝐔 𝐋𝐨𝐚𝐝: ${cpuUsage}
-👑 𝐎𝐰𝐧𝐞𝐫: ${owner}
+👑 𝐎𝐰𝐧𝐞𝐫: 𝐇𝐑 𝐇𝐀𝐁𝐈𝐁
 ✿•≫───────────────≪•✿
 `;
       
