@@ -66,7 +66,7 @@ module.exports = {
 
       return `
 ╔═════════════════════╗
-║        ⚡ RS. BOT SYSTEM ⚡
+║        ⚡ HR. BOT SYSTEM ⚡
 ╠═════════════════════╣
 ║ ⏳ Uptime   : ${d}d ${h}h ${m}m ${s}s
 ║ 📅 Date     : ${date}
