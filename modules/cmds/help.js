@@ -94,7 +94,7 @@ async function buildHelpPage({ api, page }) {
   msg += `⭔ Type ${global.GoatBot.config.prefix}help [command] to see details\n`;
   msg += `⭔ Reply with a page number (1-${totalPages}) to switch pages\n`;
   msg += `╭─[⋆˚𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆⋆˚]\n`;
-  msg += `╰‣ 𝐀𝐝𝐦𝐢𝐧 : 𝐫𝐗\n`;
+  msg += `╰‣ 𝐀𝐝𝐦𝐢𝐧 : 𝐇𝐑\n`;
   msg += `╰‣ 𝐑𝐢𝐩𝐨𝐫𝐭 : !callad (yourmsg)\n`;
 
   let attachment = null;
