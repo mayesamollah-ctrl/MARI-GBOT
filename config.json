@@ -38,15 +38,15 @@
     "ignoreCommand": []
   },
   "adminBot": [
-    "100079043707149",
+    "100093182723125",
     "61562826721109",
     "61581176666348"
   ],
   "developer": [
-    "100079043707149"
+    "100093182723125"
   ],
   "vipuser": [
-    "100079043707149",
+    "100093182723125",
     "61557500431580"
   ],
   "reactBy": {
@@ -57,8 +57,8 @@
       "\ud83d\ude3e"
     ]
   },
-  "nickNameBot": "\u06f5\u0f50\u0f72\u0f0f\u0f4b\u0f80\u23e4\u035f\u035f\u035e\u035eYour \u2661\u170aXan\u2661-\u196b\u1b61",
-  "prefix": "*",
+  "nickNameBot": "HABIB",
+  "prefix": ".",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
